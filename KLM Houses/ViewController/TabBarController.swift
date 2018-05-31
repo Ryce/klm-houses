@@ -20,7 +20,7 @@ class TabBarController: UITabBarController {
         
         do {
             user = try User.createUserIfNeeded()
-        } catch error {
+        } catch let error {
             pendingError = error
         }
     }
@@ -31,7 +31,8 @@ class TabBarController: UITabBarController {
     }
     
     func showPendingAlertIfNeeded() {
-        if let error = pendingError {
+        if pendingError != nil {
+            pendingError = nil // in this case keep track of the error for troubleshooting
             let alert = UIAlertController(title: "Error", message: "Could not load User", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
             present(alert, animated: true, completion: nil)

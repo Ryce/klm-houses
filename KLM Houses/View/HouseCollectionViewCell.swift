@@ -8,6 +8,16 @@
 
 import UIKit
 
-class HouseCollectionViewCell: UICollectionViewCell {
+class HouseCollectionViewCell: UICollectionViewCell, Reusable {
+    
+    var house: House? {
+        didSet {
+            setupView()
+        }
+    }
+    
+    func setupView() {
+        // TODO:
+    }
     
 }

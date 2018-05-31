@@ -29,14 +29,20 @@ class HousesViewController: UIViewController, Updateable {
 
     // MARK: - Collection View
 
-extension HousesViewController {
+extension HousesViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return houses.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell: HouseCollectionViewCell = collectionView.dequeueReusableCell(indexPath: indexPath)
+        cell.house = houses[indexPath.row]
+        return cell
     }
     
 }
