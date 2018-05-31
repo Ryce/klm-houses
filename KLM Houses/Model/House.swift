@@ -8,20 +8,27 @@
 
 import Foundation
 import CoreLocation
+import RealmSwift
 
-struct House {
-    var index: Int
-    var title: String
-    var videoUrl: String?
-    var location: CLLocationCoordinate2D
+class House: Object {
+    @objc dynamic var index: Int = 0
+    @objc dynamic var title: String = ""
+    @objc dynamic var videoUrl: String = ""
+    @objc dynamic var location: CLLocation?
     
-    var isFavorite: Bool
-    var isMissing: Bool
-    var notes: [String]
+    @objc dynamic var isFavorite: Bool = false
+    @objc dynamic var isMissing: Bool = true
+    @objc dynamic var notes: [String] = []
+    
+    fileprivate convenience init(index: Int, testObject: Bool) {
+        self.init()
+        self.index = index
+        self.title = String(randomWithLength: 20)
+    }
 
 }
 
-extension House: Equatable {
+extension House {
     
     static func ==(lhs: House, rhs: House) -> Bool {
         return lhs.index == rhs.index
@@ -29,6 +36,10 @@ extension House: Equatable {
     
 }
 
-var testHouseSet: [House] = [
-    House(index: 0, title: "Björk house number 1", videoUrl: "https://youtu.be/Ch104M9YnDo", location: .init(latitude: 33.053, longitude: 133.053), isFavorite: false, isMissing: false, notes: [])
-]
+var testHouseSet: [House] = {
+    var result: [House] = []
+    for index in 0...80 {
+        result.append(House(index: index, testObject: true))
+    }
+    return result
+}()
