@@ -1,0 +1,30 @@
+PODS:
+  - PinterestSegment (1.2.0)
+  - Realm (3.6.0):
+    - Realm/Headers (= 3.6.0)
+  - Realm/Headers (3.6.0)
+  - RealmSwift (3.6.0):
+    - Realm (= 3.6.0)
+  - YouTubePlayer (0.4.0)
+
+DEPENDENCIES:
+  - PinterestSegment
+  - RealmSwift
+  - YouTubePlayer
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - PinterestSegment
+    - Realm
+    - RealmSwift
+    - YouTubePlayer
+
+SPEC CHECKSUMS:
+  PinterestSegment: d589fce6c62141466b9f36ea8ab0a16fde9ac8f4
+  Realm: 08b464b462d4f31bbd4ba5f5a1c8722ef0a700b7
+  RealmSwift: 973e1499c44ab571f894c2c908e2db450be280c3
+  YouTubePlayer: 028451f6772f372d4759866db99824c676ac1473
+
+PODFILE CHECKSUM: eacc7a57ab7738a36cfa72d2864146081bd5f451
+
+COCOAPODS: 1.5.3

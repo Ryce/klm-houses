@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		169DAC7D670FE56C1EDD99FF /* Pods_KLM_Houses.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C21B62D04685CA9EAE399806 /* Pods_KLM_Houses.framework */; };
 		DAAA1DB420BFDD7000FF1BE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAA1DB320BFDD7000FF1BE1 /* AppDelegate.swift */; };
 		DAAA1DB620BFDD7000FF1BE1 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAA1DB520BFDD7000FF1BE1 /* MasterViewController.swift */; };
 		DAAA1DB820BFDD7000FF1BE1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAA1DB720BFDD7000FF1BE1 /* DetailViewController.swift */; };
 		DAAA1DBB20BFDD7000FF1BE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAAA1DB920BFDD7000FF1BE1 /* Main.storyboard */; };
 		DAAA1DBD20BFDD7100FF1BE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAAA1DBC20BFDD7100FF1BE1 /* Assets.xcassets */; };
 		DAAA1DC020BFDD7100FF1BE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAAA1DBE20BFDD7100FF1BE1 /* LaunchScreen.storyboard */; };
+		DAAA1DCA20BFED5800FF1BE1 /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAA1DC920BFED5800FF1BE1 /* House.swift */; };
+		DAAA1DCC20BFEE5E00FF1BE1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAA1DCB20BFEE5E00FF1BE1 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A57B865C902C6807BA669C8 /* Pods-KLM Houses.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLM Houses.release.xcconfig"; path = "Pods/Target Support Files/Pods-KLM Houses/Pods-KLM Houses.release.xcconfig"; sourceTree = "<group>"; };
+		9BD0F6DC9137701B2361921F /* Pods-KLM Houses.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KLM Houses.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KLM Houses/Pods-KLM Houses.debug.xcconfig"; sourceTree = "<group>"; };
+		C21B62D04685CA9EAE399806 /* Pods_KLM_Houses.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KLM_Houses.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAAA1DB020BFDD7000FF1BE1 /* KLM Houses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KLM Houses.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAAA1DB320BFDD7000FF1BE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAAA1DB520BFDD7000FF1BE1 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		DAAA1DBC20BFDD7100FF1BE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAAA1DBF20BFDD7100FF1BE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAAA1DC120BFDD7100FF1BE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAAA1DC920BFED5800FF1BE1 /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
+		DAAA1DCB20BFEE5E00FF1BE1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				169DAC7D670FE56C1EDD99FF /* Pods_KLM_Houses.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C3D0ACCD10AC9905F583828 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9BD0F6DC9137701B2361921F /* Pods-KLM Houses.debug.xcconfig */,
+				6A57B865C902C6807BA669C8 /* Pods-KLM Houses.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D2D6445BC16B2C7825A2AB51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C21B62D04685CA9EAE399806 /* Pods_KLM_Houses.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DAAA1DA720BFDD7000FF1BE1 = {
 			isa = PBXGroup;
 			children = (
 				DAAA1DB220BFDD7000FF1BE1 /* KLM Houses */,
 				DAAA1DB120BFDD7000FF1BE1 /* Products */,
+				2C3D0ACCD10AC9905F583828 /* Pods */,
+				D2D6445BC16B2C7825A2AB51 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +84,7 @@
 		DAAA1DB220BFDD7000FF1BE1 /* KLM Houses */ = {
 			isa = PBXGroup;
 			children = (
+				DAAA1DC820BFDF5400FF1BE1 /* Model */,
 				DAAA1DB320BFDD7000FF1BE1 /* AppDelegate.swift */,
 				DAAA1DB520BFDD7000FF1BE1 /* MasterViewController.swift */,
 				DAAA1DB720BFDD7000FF1BE1 /* DetailViewController.swift */,
@@ -67,6 +96,15 @@
 			path = "KLM Houses";
 			sourceTree = "<group>";
 		};
+		DAAA1DC820BFDF5400FF1BE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DAAA1DC920BFED5800FF1BE1 /* House.swift */,
+				DAAA1DCB20BFEE5E00FF1BE1 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAAA1DC420BFDD7100FF1BE1 /* Build configuration list for PBXNativeTarget "KLM Houses" */;
 			buildPhases = (
+				AD939BAD1F536593D527A31A /* [CP] Check Pods Manifest.lock */,
 				DAAA1DAC20BFDD7000FF1BE1 /* Sources */,
 				DAAA1DAD20BFDD7000FF1BE1 /* Frameworks */,
 				DAAA1DAE20BFDD7000FF1BE1 /* Resources */,
+				3DD294326D9E509C0C6ED4B8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +173,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3DD294326D9E509C0C6ED4B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KLM Houses/Pods-KLM Houses-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PinterestSegment/PinterestSegment.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/YouTubePlayer/YouTubePlayer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PinterestSegment.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YouTubePlayer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KLM Houses/Pods-KLM Houses-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD939BAD1F536593D527A31A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KLM Houses-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DAAA1DAC20BFDD7000FF1BE1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +225,8 @@
 			files = (
 				DAAA1DB820BFDD7000FF1BE1 /* DetailViewController.swift in Sources */,
 				DAAA1DB620BFDD7000FF1BE1 /* MasterViewController.swift in Sources */,
+				DAAA1DCA20BFED5800FF1BE1 /* House.swift in Sources */,
+				DAAA1DCC20BFEE5E00FF1BE1 /* User.swift in Sources */,
 				DAAA1DB420BFDD7000FF1BE1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +369,7 @@
 		};
 		DAAA1DC520BFDD7100FF1BE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BD0F6DC9137701B2361921F /* Pods-KLM Houses.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +388,7 @@
 		};
 		DAAA1DC620BFDD7100FF1BE1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A57B865C902C6807BA669C8 /* Pods-KLM Houses.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
